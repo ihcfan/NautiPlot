@@ -54,7 +54,7 @@ bool NautiPlotHMI::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = LabelTTF::create("Hello World", "Arial", 24);
+    auto label = LabelTTF::create("NautiPlotHMI", "Arial", 24);
     
     // position the label on the center of the screen
     label->setPosition(Point(origin.x + visibleSize.width/2,
@@ -64,7 +64,7 @@ bool NautiPlotHMI::init()
     this->addChild(label, 1);
 
     // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
+    auto sprite = Sprite::create("SplashScreen.png");
 
     // position the sprite on the center of the screen
     sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
