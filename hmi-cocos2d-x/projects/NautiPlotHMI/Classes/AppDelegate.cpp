@@ -1,4 +1,5 @@
 #include "AppDelegate.h"
+#include "UDPIO.h"
 #include "NautiPlotHMI.h"
 
 USING_NS_CC;
@@ -15,17 +16,20 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
     auto director = Director::getInstance();
     auto eglView = EGLView::getInstance();
+   
 
     director->setOpenGLView(eglView);
 	
     // turn on display FPS
-    director->setDisplayStats(true);
+    director->setDisplayStats(false);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
     auto scene = NautiPlotHMI::createScene();
+    
+    network::UDPIO::instance().connect(udpClient,"*:1365");
 
     // run
     director->runWithScene(scene);

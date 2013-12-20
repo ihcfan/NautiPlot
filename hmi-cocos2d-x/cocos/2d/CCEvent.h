@@ -47,6 +47,7 @@ public:
         KEYBOARD,
         ACCELERATION,
         MOUSE,
+        UDP,
         CUSTOM
     };
     

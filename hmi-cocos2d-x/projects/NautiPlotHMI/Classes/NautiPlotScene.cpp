@@ -1,4 +1,5 @@
 #include "NautiPlotHMI.h"
+#include "CCEventUDP.h"
 
 USING_NS_CC;
 
@@ -61,7 +62,16 @@ bool NautiPlotHMI::init()
                             origin.y + visibleSize.height - label->getContentSize().height));
 
     // add the label as a child to this layer
-    this->addChild(label, 1);
+    this->addChild(label,1);
+    
+    latlong = LabelTTF::create("XYZ", "Arial", 14);
+    
+    // position the label on the center of the screen
+    latlong->setPosition(Point(origin.x + visibleSize.width/2,
+                             origin.y + visibleSize.height - 2*label->getContentSize().height));
+    
+    // add the label as a child to this layer
+    this->addChild(latlong,2,32);
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("SplashScreen.png");
@@ -72,9 +82,24 @@ bool NautiPlotHMI::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
     
+    listener = EventListenerUDP::create([=](cocos2d::EventUDP* event) {
+        udpCallback(event);
+    });
+                                        
+    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
+    
     return true;
 }
 
+void NautiPlotHMI::udpCallback(cocos2d::EventUDP* event) {
+    void* userData= event->getUDPData();
+    int len = event->length();
+    
+//    const LabelTTF *text = static_cast<const LabelTTF *>(getChildByTag(32));
+//    if (text != nullptr) removeChild(getChildByTag(32));
+    latlong->setString("");
+    fprintf(stderr,"set %p",latlong);
+}
 
 void NautiPlotHMI::menuCloseCallback(Object* pSender)
 {

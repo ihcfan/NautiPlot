@@ -1851,6 +1851,18 @@
 		59A79D561821E26E00F19697 /* CCEventMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59A79D4F1821E26E00F19697 /* CCEventMouse.cpp */; };
 		59A79D571821E26E00F19697 /* CCEventMouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A79D501821E26E00F19697 /* CCEventMouse.h */; };
 		59A79D581821E26E00F19697 /* CCEventMouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A79D501821E26E00F19697 /* CCEventMouse.h */; };
+		7857550118612AAB00C7EE4E /* UDPIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 785754FF186107C000C7EE4E /* UDPIO.cpp */; };
+		7857550218612AB200C7EE4E /* UDPIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 785754FF186107C000C7EE4E /* UDPIO.cpp */; };
+		7857550318612ACB00C7EE4E /* UDPIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 78575500186107C000C7EE4E /* UDPIO.h */; };
+		7857550418612AD000C7EE4E /* UDPIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 78575500186107C000C7EE4E /* UDPIO.h */; };
+		78ABDBC31863A28D005F9847 /* CCEventUDP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDBC11863A28D005F9847 /* CCEventUDP.cpp */; };
+		78ABDBC41863A28D005F9847 /* CCEventUDP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDBC11863A28D005F9847 /* CCEventUDP.cpp */; };
+		78ABDBC51863A28D005F9847 /* CCEventUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ABDBC21863A28D005F9847 /* CCEventUDP.h */; };
+		78ABDBC61863A28D005F9847 /* CCEventUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ABDBC21863A28D005F9847 /* CCEventUDP.h */; };
+		78ABDBC91863B0B0005F9847 /* CCEventListenerUDP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDBC71863B0AF005F9847 /* CCEventListenerUDP.cpp */; };
+		78ABDBCA1863B0B0005F9847 /* CCEventListenerUDP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78ABDBC71863B0AF005F9847 /* CCEventListenerUDP.cpp */; };
+		78ABDBCB1863B0B0005F9847 /* CCEventListenerUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ABDBC81863B0B0005F9847 /* CCEventListenerUDP.h */; };
+		78ABDBCC1863B0B0005F9847 /* CCEventListenerUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ABDBC81863B0B0005F9847 /* CCEventListenerUDP.h */; };
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		B375105B1823AC9200B3BA6A /* CCPhysicsBodyInfo_box2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B37510501823AC9200B3BA6A /* CCPhysicsBodyInfo_box2d.cpp */; };
 		B375105C1823AC9200B3BA6A /* CCPhysicsBodyInfo_box2d.h in Headers */ = {isa = PBXBuildFile; fileRef = B37510511823AC9200B3BA6A /* CCPhysicsBodyInfo_box2d.h */; };
@@ -2991,6 +3003,12 @@
 		59A79D4E1821E26E00F19697 /* CCEventListenerMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventListenerMouse.h; sourceTree = "<group>"; };
 		59A79D4F1821E26E00F19697 /* CCEventMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEventMouse.cpp; sourceTree = "<group>"; };
 		59A79D501821E26E00F19697 /* CCEventMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventMouse.h; sourceTree = "<group>"; };
+		785754FF186107C000C7EE4E /* UDPIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UDPIO.cpp; sourceTree = "<group>"; };
+		78575500186107C000C7EE4E /* UDPIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPIO.h; sourceTree = "<group>"; };
+		78ABDBC11863A28D005F9847 /* CCEventUDP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEventUDP.cpp; sourceTree = "<group>"; };
+		78ABDBC21863A28D005F9847 /* CCEventUDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventUDP.h; sourceTree = "<group>"; };
+		78ABDBC71863B0AF005F9847 /* CCEventListenerUDP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEventListenerUDP.cpp; sourceTree = "<group>"; };
+		78ABDBC81863B0B0005F9847 /* CCEventListenerUDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEventListenerUDP.h; sourceTree = "<group>"; };
 		A03F2CB81780BD04006731B9 /* libchipmunk Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2D9B1780BDF7006731B9 /* libbox2d Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libbox2d Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2ED617814268006731B9 /* libCocosDenshion Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocosDenshion Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3550,6 +3568,10 @@
 				1A570139180BC9460088DEC7 /* CCEventTouch.h */,
 				1A570544180BD9C40088DEC7 /* CCTouch.cpp */,
 				1A570545180BD9C40088DEC7 /* CCTouch.h */,
+				78ABDBC11863A28D005F9847 /* CCEventUDP.cpp */,
+				78ABDBC21863A28D005F9847 /* CCEventUDP.h */,
+				78ABDBC71863B0AF005F9847 /* CCEventListenerUDP.cpp */,
+				78ABDBC81863B0B0005F9847 /* CCEventListenerUDP.h */,
 			);
 			name = "event-dispatcher";
 			sourceTree = "<group>";
@@ -4253,6 +4275,8 @@
 				1AAF5367180E3374000584C8 /* SocketIO.h */,
 				1AAF5368180E3374000584C8 /* WebSocket.cpp */,
 				1AAF5369180E3374000584C8 /* WebSocket.h */,
+				785754FF186107C000C7EE4E /* UDPIO.cpp */,
+				78575500186107C000C7EE4E /* UDPIO.h */,
 			);
 			name = network;
 			path = ../cocos/network;
@@ -5610,6 +5634,9 @@
 				1A8C5A0B180E930E00EF57C3 /* CSContentJsonDictionary.h in Headers */,
 				59A79D571821E26E00F19697 /* CCEventMouse.h in Headers */,
 				1A8C5A0F180E930E00EF57C3 /* DictionaryHelper.h in Headers */,
+				7857550318612ACB00C7EE4E /* UDPIO.h in Headers */,
+				78ABDBC51863A28D005F9847 /* CCEventUDP.h in Headers */,
+				78ABDBCB1863B0B0005F9847 /* CCEventListenerUDP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6176,6 +6203,9 @@
 				1A8C5A08180E930E00EF57C3 /* CocoStudio.h in Headers */,
 				1A8C5A0C180E930E00EF57C3 /* CSContentJsonDictionary.h in Headers */,
 				1A8C5A10180E930E00EF57C3 /* DictionaryHelper.h in Headers */,
+				7857550418612AD000C7EE4E /* UDPIO.h in Headers */,
+				78ABDBC61863A28D005F9847 /* CCEventUDP.h in Headers */,
+				78ABDBCC1863B0B0005F9847 /* CCEventListenerUDP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6915,6 +6945,9 @@
 				B375105B1823AC9200B3BA6A /* CCPhysicsBodyInfo_box2d.cpp in Sources */,
 				1A8C5A09180E930E00EF57C3 /* CSContentJsonDictionary.cpp in Sources */,
 				1A8C5A0D180E930E00EF57C3 /* DictionaryHelper.cpp in Sources */,
+				7857550118612AAB00C7EE4E /* UDPIO.cpp in Sources */,
+				78ABDBC31863A28D005F9847 /* CCEventUDP.cpp in Sources */,
+				78ABDBC91863B0B0005F9847 /* CCEventListenerUDP.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7426,6 +7459,9 @@
 				B37510661823AC9900B3BA6A /* CCPhysicsBodyInfo_box2d.cpp in Sources */,
 				1A8C5A0A180E930E00EF57C3 /* CSContentJsonDictionary.cpp in Sources */,
 				1A8C5A0E180E930E00EF57C3 /* DictionaryHelper.cpp in Sources */,
+				7857550218612AB200C7EE4E /* UDPIO.cpp in Sources */,
+				78ABDBC41863A28D005F9847 /* CCEventUDP.cpp in Sources */,
+				78ABDBCA1863B0B0005F9847 /* CCEventListenerUDP.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

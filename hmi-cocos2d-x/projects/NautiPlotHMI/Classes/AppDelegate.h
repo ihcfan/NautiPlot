@@ -2,6 +2,7 @@
 #define  _APP_DELEGATE_H_
 
 #include "cocos2d.h"
+#include "UDPIO.h"
 
 /**
 @brief    The cocos2d Application.
@@ -32,6 +33,8 @@ public:
     @param  the pointer of the application
     */
     virtual void applicationWillEnterForeground();
+private:
+    network::UDPIO::UDPClient udpClient;
 };
 
 #endif // _APP_DELEGATE_H_

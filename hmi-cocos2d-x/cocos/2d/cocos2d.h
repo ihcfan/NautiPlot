@@ -230,7 +230,9 @@ THE SOFTWARE.
 #include "CCEventMouse.h"
 #include "CCEventAcceleration.h"
 #include "CCEventListenerAcceleration.h"
+#include "CCEventUDP.h"
 #include "CCEventCustom.h"
+#include "CCEventListenerUDP.h"
 #include "CCEventListenerCustom.h"
 
 // root

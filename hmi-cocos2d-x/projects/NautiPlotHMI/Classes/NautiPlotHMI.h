@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+class EventUDP;
+
 class NautiPlotHMI : public cocos2d::Layer
 {
 public:
@@ -17,6 +19,10 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(NautiPlotHMI);
+private:
+    cocos2d::LabelTTF *latlong;
+    void udpCallback(cocos2d::EventUDP* event);
+    cocos2d::EventListenerUDP *listener;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

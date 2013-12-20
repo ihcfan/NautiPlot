@@ -26,6 +26,7 @@
 #include "CCEventTouch.h"
 #include "CCEventCustom.h"
 #include "CCEventListenerTouch.h"
+#include "CCEventUDP.h"
 #include "CCNode.h"
 #include "CCDirector.h"
 
@@ -84,6 +85,9 @@ static EventListener::ListenerID getListenerID(Event* event)
             // Touch listener is very special, it contains two kinds of listeners, EventListenerTouchOneByOne and EventListenerTouchAllAtOnce.
             // return UNKNOW instead.
             ret = static_cast<EventListener::ListenerID>(EventListener::Type::UNKNOWN);
+            break;
+        case Event::Type::UDP:
+            ret = static_cast<EventListener::ListenerID>(EventListener::Type::UDP);
             break;
         default:
             CCASSERT(false, "Invalid type!");
