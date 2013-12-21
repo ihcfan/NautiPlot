@@ -97,8 +97,11 @@ void NautiPlotHMI::udpCallback(cocos2d::EventUDP* event) {
     
 //    const LabelTTF *text = static_cast<const LabelTTF *>(getChildByTag(32));
 //    if (text != nullptr) removeChild(getChildByTag(32));
-    latlong->setString("");
-    fprintf(stderr,"set %p",latlong);
+    char *test = (char *)userData;
+    test[38]=0;
+    std::string text(test);
+    latlong->setString(text);
+//    fprintf(stderr,"set %p",latlong);
 }
 
 void NautiPlotHMI::menuCloseCallback(Object* pSender)

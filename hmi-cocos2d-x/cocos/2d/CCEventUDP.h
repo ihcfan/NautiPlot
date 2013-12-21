@@ -10,10 +10,12 @@
 #define __cocos2d_libs__CCEventUDP__
 
 #include "CCEvent.h"
+#include "CCObject.h"
+
 
 NS_CC_BEGIN
 
-class EventUDP : public Event
+class EventUDP : public Object, public Event
 {
 public:
     /** Constructor */

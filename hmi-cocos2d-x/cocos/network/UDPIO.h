@@ -35,7 +35,7 @@ namespace network {
         /**
          *  @brief The delegate class to process socket.io events
          */
-        class UDPClient
+        class UDPClient: public cocos2d::Object
         {
             friend UDPIO;
             
@@ -60,8 +60,12 @@ namespace network {
             sockaddr si_me;
             std::thread *thread;
         protected:
+            void dispatchEvents(float delta);
             void threadEntryFunction();
             void setThread(std::thread* threadInstance) { thread=threadInstance; }
+            bool lazyInitThreadSemaphore();
+            std::mutex rxQueueMutex;
+            cocos2d::Array* rxQueue = NULL;
         };
         
         /**

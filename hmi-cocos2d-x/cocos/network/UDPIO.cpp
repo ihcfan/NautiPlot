@@ -32,22 +32,37 @@ namespace network {
         return it;
     }
     
-    //begin SIOClientImpl methods
+    bool UDPIO::createThread(UDPIO::UDPClient* client) {
+        client->lazyInitThreadSemaphore();
+        std::thread* threadInstance = new std::thread(&UDPIO::UDPClient::threadEntryFunction,client);
+        client->setThread(threadInstance);
+        return true;
+    }
+
     UDPIO::UDPClient::UDPClient(): socket_handle(-1), connected(-1), port(-1)
     {
+        cocos2d::Director::getInstance()->getScheduler()->scheduleSelector(
+                                                                           schedule_selector(UDPIO::UDPClient::dispatchEvents), this, 0, false);
+        cocos2d::Director::getInstance()->getScheduler()->pauseTarget(this);
     }
     
     UDPIO::UDPClient::~UDPClient()
     {
         UDPIO::instance().disconnect(*this);
     }
-    
-    bool UDPIO::createThread(UDPIO::UDPClient* client) {
-        std::thread* threadInstance = new std::thread(&UDPIO::UDPClient::threadEntryFunction,client);
-        client->setThread(threadInstance);
+
+    bool UDPIO::UDPClient::lazyInitThreadSemaphore()
+    {
+        if (rxQueue != NULL) {
+            return true;
+        } else {
+            
+            rxQueue = new cocos2d::Array();
+            rxQueue->init();
+        }
         return true;
     }
-    
+
     
     bool UDPIO::connect(UDPIO::UDPClient& client, const std::string& uri)
     {
@@ -152,10 +167,48 @@ namespace network {
     }
     
     void UDPIO::UDPClient::onMessageReceived(void *data, int len) {
-        auto dispatcher = cocos2d::Director::getInstance()->getEventDispatcher();
-        static auto udpEvent = new cocos2d::EventUDP(data,len);
-        dispatcher->dispatchEvent(udpEvent);
+        auto udpEvent = new cocos2d::EventUDP(data,len);
+
+        // queue event for reception in the Scheduler target.  Need to get it to the main thread before
+        // we dispatch.
+        rxQueueMutex.lock();
+        rxQueue->addObject(udpEvent);
+        rxQueueMutex.unlock();
+        
+        cocos2d::Director::getInstance()->getScheduler()->resumeTarget(this);
     }
     
+    // Poll and notify main thread if responses exists in queue
+    void UDPIO::UDPClient::dispatchEvents(float delta)
+    {
+        long count;
+        cocos2d::EventUDP *udpEvent = nullptr;
+        
+        do {
+            
+            rxQueueMutex.lock();
+            if (rxQueue->count())
+            {
+                udpEvent = dynamic_cast<cocos2d::EventUDP*>(rxQueue->getObjectAtIndex(0));
+                rxQueue->removeObjectAtIndex(0);
+            }
+            rxQueueMutex.unlock();
+        
+            if (udpEvent)
+            {
+                auto dispatcher = cocos2d::Director::getInstance()->getEventDispatcher();
+                dispatcher->dispatchEvent(udpEvent);
+                udpEvent->release();
+            }
+            
+            // if high latency in udpEvent handler, could get another one into queue
+            // in network thread, which is why we check down here.
+            rxQueueMutex.lock();
+            count=rxQueue->count();
+            rxQueueMutex.unlock();
+        } while (count);
+        
+        cocos2d::Director::getInstance()->getScheduler()->pauseTarget(this);
+    }
     
 }
