@@ -7,58 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78090AB8186735C8005D8D5F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AB7186735C8005D8D5F /* main.cpp */; };
-		78090AD818673A4B005D8D5F /* Base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AC118673A4B005D8D5F /* Base64.cpp */; };
-		78090AD918673A4B005D8D5F /* Connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AC318673A4B005D8D5F /* Connection.cpp */; };
-		78090ADA18673A4B005D8D5F /* ConnectionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AC518673A4B005D8D5F /* ConnectionManager.cpp */; };
-		78090ADB18673A4B005D8D5F /* MessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090ACE18673A4B005D8D5F /* MessageQueue.cpp */; };
-		78090ADE18673A4B005D8D5F /* Reactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AD318673A4B005D8D5F /* Reactor.cpp */; };
-		78090ADF18673A4B005D8D5F /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AD618673A4B005D8D5F /* Socket.cpp */; };
-		78090AE218673A8F005D8D5F /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AE018673A8F005D8D5F /* Engine.cpp */; };
 		78090AF518673AC2005D8D5F /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78090AED18673AC2005D8D5F /* Database.cpp */; };
 		78090AFD18673DD0005D8D5F /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 78090AF918673DD0005D8D5F /* sqlite3.c */; };
-		78C64DF2186779C500B8F730 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C64DF1186779C500B8F730 /* libcrypto.dylib */; };
-		78C64F1818677EC500B8F730 /* libbase64++.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EEA18677EC500B8F730 /* libbase64++.h */; };
-		78C64F1918677EC500B8F730 /* mempool.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EEC18677EC500B8F730 /* mempool.h */; };
-		78C64F1A18677EC500B8F730 /* JSONOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EED18677EC500B8F730 /* JSONOptions.h */; };
-		78C64F1B18677EC500B8F730 /* libjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EEE18677EC500B8F730 /* libjson.h */; };
-		78C64F1C18677EC500B8F730 /* internalJSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64EF318677EC500B8F730 /* internalJSONNode.cpp */; };
-		78C64F1D18677EC500B8F730 /* internalJSONNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EF418677EC500B8F730 /* internalJSONNode.h */; };
-		78C64F1E18677EC500B8F730 /* JSON_Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EF518677EC500B8F730 /* JSON_Base64.h */; };
-		78C64F1F18677EC500B8F730 /* JSONAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64EF618677EC500B8F730 /* JSONAllocator.cpp */; };
-		78C64F2018677EC500B8F730 /* JSONAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EF718677EC500B8F730 /* JSONAllocator.h */; };
-		78C64F2118677EC500B8F730 /* JSONChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64EF818677EC500B8F730 /* JSONChildren.cpp */; };
-		78C64F2218677EC500B8F730 /* JSONChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EF918677EC500B8F730 /* JSONChildren.h */; };
-		78C64F2318677EC500B8F730 /* JSONDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64EFA18677EC500B8F730 /* JSONDebug.cpp */; };
-		78C64F2418677EC500B8F730 /* JSONDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EFB18677EC500B8F730 /* JSONDebug.h */; };
-		78C64F2518677EC500B8F730 /* GNU_C.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EFD18677EC500B8F730 /* GNU_C.h */; };
-		78C64F2618677EC500B8F730 /* Strings_Defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EFE18677EC500B8F730 /* Strings_Defs.h */; };
-		78C64F2718677EC500B8F730 /* Unknown_C.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64EFF18677EC500B8F730 /* Unknown_C.h */; };
-		78C64F2818677EC500B8F730 /* Visual_C.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0018677EC500B8F730 /* Visual_C.h */; };
-		78C64F2918677EC500B8F730 /* JSONDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0118677EC500B8F730 /* JSONDefs.h */; };
-		78C64F2A18677EC500B8F730 /* JSONGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0218677EC500B8F730 /* JSONGlobals.h */; };
-		78C64F2B18677EC500B8F730 /* JSONIterators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0318677EC500B8F730 /* JSONIterators.cpp */; };
-		78C64F2C18677EC500B8F730 /* JSONMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0418677EC500B8F730 /* JSONMemory.cpp */; };
-		78C64F2D18677EC500B8F730 /* JSONMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0518677EC500B8F730 /* JSONMemory.h */; };
-		78C64F2E18677EC500B8F730 /* JSONMemoryPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0618677EC500B8F730 /* JSONMemoryPool.h */; };
-		78C64F2F18677EC500B8F730 /* JSONNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0718677EC500B8F730 /* JSONNode.cpp */; };
-		78C64F3018677EC500B8F730 /* JSONNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0818677EC500B8F730 /* JSONNode.h */; };
-		78C64F3118677EC500B8F730 /* JSONNode_Mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0918677EC500B8F730 /* JSONNode_Mutex.cpp */; };
-		78C64F3218677EC500B8F730 /* JSONPreparse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0A18677EC500B8F730 /* JSONPreparse.cpp */; };
-		78C64F3318677EC500B8F730 /* JSONPreparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0B18677EC500B8F730 /* JSONPreparse.h */; };
-		78C64F3418677EC500B8F730 /* JSONSharedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0C18677EC500B8F730 /* JSONSharedString.h */; };
-		78C64F3518677EC500B8F730 /* JSONSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0D18677EC500B8F730 /* JSONSingleton.h */; };
-		78C64F3618677EC500B8F730 /* JSONStats.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F0E18677EC500B8F730 /* JSONStats.h */; };
-		78C64F3718677EC500B8F730 /* JSONStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F0F18677EC500B8F730 /* JSONStream.cpp */; };
-		78C64F3818677EC500B8F730 /* JSONStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F1018677EC500B8F730 /* JSONStream.h */; };
-		78C64F3918677EC500B8F730 /* JSONValidator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F1118677EC500B8F730 /* JSONValidator.cpp */; };
-		78C64F3A18677EC500B8F730 /* JSONValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F1218677EC500B8F730 /* JSONValidator.h */; };
-		78C64F3B18677EC500B8F730 /* JSONWorker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F1318677EC500B8F730 /* JSONWorker.cpp */; };
-		78C64F3C18677EC500B8F730 /* JSONWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F1418677EC500B8F730 /* JSONWorker.h */; };
-		78C64F3D18677EC500B8F730 /* JSONWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F1518677EC500B8F730 /* JSONWriter.cpp */; };
-		78C64F3E18677EC500B8F730 /* libjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C64F1618677EC500B8F730 /* libjson.cpp */; };
-		78C64F3F18677EC500B8F730 /* NumberToString.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C64F1718677EC500B8F730 /* NumberToString.h */; };
-		78C64F4018677F7900B8F730 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C64ECA18677D1D00B8F730 /* libjson.dylib */; };
+		78BC8CCC1868BEC70034636F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78BC8CCA1868BEC70034636F /* main.cpp */; };
+		78BC8CCE1868BF150034636F /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BC8CCD1868BF150034636F /* libwebsockets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,84 +27,15 @@
 
 /* Begin PBXFileReference section */
 		78090AB4186735C8005D8D5F /* NautiHubMapServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NautiHubMapServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		78090AB7186735C8005D8D5F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		78090AC118673A4B005D8D5F /* Base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Base64.cpp; sourceTree = "<group>"; };
-		78090AC218673A4B005D8D5F /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		78090AC318673A4B005D8D5F /* Connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Connection.cpp; sourceTree = "<group>"; };
-		78090AC418673A4B005D8D5F /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
-		78090AC518673A4B005D8D5F /* ConnectionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionManager.cpp; sourceTree = "<group>"; };
-		78090AC618673A4B005D8D5F /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
-		78090AC818673A4B005D8D5F /* Connection_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection_impl.h; sourceTree = "<group>"; };
-		78090AC918673A4B005D8D5F /* ConnectionManager_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager_impl.h; sourceTree = "<group>"; };
-		78090ACA18673A4B005D8D5F /* MessageQueue_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageQueue_impl.h; sourceTree = "<group>"; };
-		78090ACB18673A4B005D8D5F /* MessageQueueTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageQueueTypes.h; sourceTree = "<group>"; };
-		78090ACC18673A4B005D8D5F /* Reactor_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactor_impl.h; sourceTree = "<group>"; };
-		78090ACD18673A4B005D8D5F /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		78090ACE18673A4B005D8D5F /* MessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageQueue.cpp; sourceTree = "<group>"; };
-		78090ACF18673A4B005D8D5F /* MessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageQueue.h; sourceTree = "<group>"; };
-		78090AD318673A4B005D8D5F /* Reactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Reactor.cpp; sourceTree = "<group>"; };
-		78090AD418673A4B005D8D5F /* Reactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reactor.h; sourceTree = "<group>"; };
-		78090AD518673A4B005D8D5F /* ReactorTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactorTypes.h; sourceTree = "<group>"; };
-		78090AD618673A4B005D8D5F /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
-		78090AD718673A4B005D8D5F /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
-		78090AE018673A8F005D8D5F /* Engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
-		78090AE118673A8F005D8D5F /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
-		78090AE418673AA9005D8D5F /* Engine_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine_impl.h; sourceTree = "<group>"; };
 		78090AED18673AC2005D8D5F /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Database.cpp; sourceTree = "<group>"; };
 		78090AEE18673AC2005D8D5F /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
 		78090AF918673DD0005D8D5F /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		78090AFA18673DD0005D8D5F /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		78090AFB18673DD0005D8D5F /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
-		78090AFE18674289005D8D5F /* portable_endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = portable_endian.h; sourceTree = "<group>"; };
-		78C64DF1186779C500B8F730 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
-		78C64DF318677A6200B8F730 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		78BC8CCA1868BEC70034636F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		78BC8CCD1868BF150034636F /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = libwebsockets/xcode/lib/Release/libwebsockets.a; sourceTree = "<group>"; };
+		78BC8CCF1868C06D0034636F /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libwebsockets.h; path = libwebsockets/lib/libwebsockets.h; sourceTree = "<group>"; };
 		78C64ECA18677D1D00B8F730 /* libjson.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libjson.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C64ECD18677D1D00B8F730 /* libjson-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libjson-Prefix.pch"; sourceTree = "<group>"; };
-		78C64ECE18677D1D00B8F730 /* libjsonProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libjsonProj.xcconfig; sourceTree = "<group>"; };
-		78C64ECF18677D1D00B8F730 /* libjsonTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libjsonTarget.xcconfig; sourceTree = "<group>"; };
-		78C64ED018677D1D00B8F730 /* libjson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libjson.h; sourceTree = "<group>"; };
-		78C64EEA18677EC500B8F730 /* libbase64++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libbase64++.h"; sourceTree = "<group>"; };
-		78C64EEC18677EC500B8F730 /* mempool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mempool.h; sourceTree = "<group>"; };
-		78C64EED18677EC500B8F730 /* JSONOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONOptions.h; sourceTree = "<group>"; };
-		78C64EEE18677EC500B8F730 /* libjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libjson.h; sourceTree = "<group>"; };
-		78C64EEF18677EC500B8F730 /* libjsonProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = libjsonProj.xcconfig; sourceTree = "<group>"; };
-		78C64EF018677EC500B8F730 /* libjsonTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = libjsonTarget.xcconfig; sourceTree = "<group>"; };
-		78C64EF318677EC500B8F730 /* internalJSONNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = internalJSONNode.cpp; sourceTree = "<group>"; };
-		78C64EF418677EC500B8F730 /* internalJSONNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internalJSONNode.h; sourceTree = "<group>"; };
-		78C64EF518677EC500B8F730 /* JSON_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON_Base64.h; sourceTree = "<group>"; };
-		78C64EF618677EC500B8F730 /* JSONAllocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONAllocator.cpp; sourceTree = "<group>"; };
-		78C64EF718677EC500B8F730 /* JSONAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAllocator.h; sourceTree = "<group>"; };
-		78C64EF818677EC500B8F730 /* JSONChildren.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONChildren.cpp; sourceTree = "<group>"; };
-		78C64EF918677EC500B8F730 /* JSONChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONChildren.h; sourceTree = "<group>"; };
-		78C64EFA18677EC500B8F730 /* JSONDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONDebug.cpp; sourceTree = "<group>"; };
-		78C64EFB18677EC500B8F730 /* JSONDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONDebug.h; sourceTree = "<group>"; };
-		78C64EFD18677EC500B8F730 /* GNU_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNU_C.h; sourceTree = "<group>"; };
-		78C64EFE18677EC500B8F730 /* Strings_Defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings_Defs.h; sourceTree = "<group>"; };
-		78C64EFF18677EC500B8F730 /* Unknown_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unknown_C.h; sourceTree = "<group>"; };
-		78C64F0018677EC500B8F730 /* Visual_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visual_C.h; sourceTree = "<group>"; };
-		78C64F0118677EC500B8F730 /* JSONDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONDefs.h; sourceTree = "<group>"; };
-		78C64F0218677EC500B8F730 /* JSONGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONGlobals.h; sourceTree = "<group>"; };
-		78C64F0318677EC500B8F730 /* JSONIterators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONIterators.cpp; sourceTree = "<group>"; };
-		78C64F0418677EC500B8F730 /* JSONMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONMemory.cpp; sourceTree = "<group>"; };
-		78C64F0518677EC500B8F730 /* JSONMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONMemory.h; sourceTree = "<group>"; };
-		78C64F0618677EC500B8F730 /* JSONMemoryPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONMemoryPool.h; sourceTree = "<group>"; };
-		78C64F0718677EC500B8F730 /* JSONNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONNode.cpp; sourceTree = "<group>"; };
-		78C64F0818677EC500B8F730 /* JSONNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONNode.h; sourceTree = "<group>"; };
-		78C64F0918677EC500B8F730 /* JSONNode_Mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONNode_Mutex.cpp; sourceTree = "<group>"; };
-		78C64F0A18677EC500B8F730 /* JSONPreparse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONPreparse.cpp; sourceTree = "<group>"; };
-		78C64F0B18677EC500B8F730 /* JSONPreparse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONPreparse.h; sourceTree = "<group>"; };
-		78C64F0C18677EC500B8F730 /* JSONSharedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSharedString.h; sourceTree = "<group>"; };
-		78C64F0D18677EC500B8F730 /* JSONSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSingleton.h; sourceTree = "<group>"; };
-		78C64F0E18677EC500B8F730 /* JSONStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStats.h; sourceTree = "<group>"; };
-		78C64F0F18677EC500B8F730 /* JSONStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONStream.cpp; sourceTree = "<group>"; };
-		78C64F1018677EC500B8F730 /* JSONStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStream.h; sourceTree = "<group>"; };
-		78C64F1118677EC500B8F730 /* JSONValidator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONValidator.cpp; sourceTree = "<group>"; };
-		78C64F1218677EC500B8F730 /* JSONValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValidator.h; sourceTree = "<group>"; };
-		78C64F1318677EC500B8F730 /* JSONWorker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONWorker.cpp; sourceTree = "<group>"; };
-		78C64F1418677EC500B8F730 /* JSONWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONWorker.h; sourceTree = "<group>"; };
-		78C64F1518677EC500B8F730 /* JSONWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JSONWriter.cpp; sourceTree = "<group>"; };
-		78C64F1618677EC500B8F730 /* libjson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libjson.cpp; sourceTree = "<group>"; };
-		78C64F1718677EC500B8F730 /* NumberToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberToString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C64DF2186779C500B8F730 /* libcrypto.dylib in Frameworks */,
-				78C64F4018677F7900B8F730 /* libjson.dylib in Frameworks */,
+				78BC8CCE1868BF150034636F /* libwebsockets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +60,9 @@
 		78090AAB186735C8005D8D5F = {
 			isa = PBXGroup;
 			children = (
-				78C64DF318677A6200B8F730 /* libstdc++.dylib */,
-				78C64DF1186779C500B8F730 /* libcrypto.dylib */,
+				78BC8CCF1868C06D0034636F /* libwebsockets.h */,
+				78BC8CCD1868BF150034636F /* libwebsockets.a */,
 				78090AB6186735C8005D8D5F /* NautiHubMapServer */,
-				78C64ECB18677D1D00B8F730 /* libjson */,
 				78090AB5186735C8005D8D5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,56 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				78090AEC18673AC2005D8D5F /* sql */,
-				78090AE318673AA9005D8D5F /* Detail */,
-				78090AE018673A8F005D8D5F /* Engine.cpp */,
-				78090AE118673A8F005D8D5F /* Engine.h */,
-				78090AC018673A4B005D8D5F /* Network */,
-				78090AB7186735C8005D8D5F /* main.cpp */,
+				78BC8CCA1868BEC70034636F /* main.cpp */,
 			);
 			path = NautiHubMapServer;
-			sourceTree = "<group>";
-		};
-		78090AC018673A4B005D8D5F /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				78090AC118673A4B005D8D5F /* Base64.cpp */,
-				78090AC218673A4B005D8D5F /* Base64.h */,
-				78090AC318673A4B005D8D5F /* Connection.cpp */,
-				78090AC418673A4B005D8D5F /* Connection.h */,
-				78090AC518673A4B005D8D5F /* ConnectionManager.cpp */,
-				78090AC618673A4B005D8D5F /* ConnectionManager.h */,
-				78090AC718673A4B005D8D5F /* Detail */,
-				78090ACD18673A4B005D8D5F /* Message.h */,
-				78090ACE18673A4B005D8D5F /* MessageQueue.cpp */,
-				78090ACF18673A4B005D8D5F /* MessageQueue.h */,
-				78090AD318673A4B005D8D5F /* Reactor.cpp */,
-				78090AD418673A4B005D8D5F /* Reactor.h */,
-				78090AD518673A4B005D8D5F /* ReactorTypes.h */,
-				78090AD618673A4B005D8D5F /* Socket.cpp */,
-				78090AD718673A4B005D8D5F /* Socket.h */,
-				78090AFE18674289005D8D5F /* portable_endian.h */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		78090AC718673A4B005D8D5F /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				78090AC818673A4B005D8D5F /* Connection_impl.h */,
-				78090AC918673A4B005D8D5F /* ConnectionManager_impl.h */,
-				78090ACA18673A4B005D8D5F /* MessageQueue_impl.h */,
-				78090ACB18673A4B005D8D5F /* MessageQueueTypes.h */,
-				78090ACC18673A4B005D8D5F /* Reactor_impl.h */,
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
-		78090AE318673AA9005D8D5F /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				78090AE418673AA9005D8D5F /* Engine_impl.h */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		78090AEC18673AC2005D8D5F /* sql */ = {
@@ -263,115 +97,6 @@
 			path = sql;
 			sourceTree = "<group>";
 		};
-		78C64ECB18677D1D00B8F730 /* libjson */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EE718677EC500B8F730 /* libjson */,
-				78C64ECE18677D1D00B8F730 /* libjsonProj.xcconfig */,
-				78C64ECF18677D1D00B8F730 /* libjsonTarget.xcconfig */,
-				78C64ED018677D1D00B8F730 /* libjson.h */,
-				78C64ECC18677D1D00B8F730 /* Supporting Files */,
-			);
-			path = libjson;
-			sourceTree = "<group>";
-		};
-		78C64ECC18677D1D00B8F730 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				78C64ECD18677D1D00B8F730 /* libjson-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		78C64EE718677EC500B8F730 /* libjson */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EE818677EC500B8F730 /* Dependencies */,
-				78C64EED18677EC500B8F730 /* JSONOptions.h */,
-				78C64EEE18677EC500B8F730 /* libjson.h */,
-				78C64EEF18677EC500B8F730 /* libjsonProj.xcconfig */,
-				78C64EF018677EC500B8F730 /* libjsonTarget.xcconfig */,
-				78C64EF118677EC500B8F730 /* Source */,
-			);
-			name = libjson;
-			sourceTree = "<group>";
-		};
-		78C64EE818677EC500B8F730 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EE918677EC500B8F730 /* libbase64++ */,
-				78C64EEB18677EC500B8F730 /* mempool++ */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		78C64EE918677EC500B8F730 /* libbase64++ */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EEA18677EC500B8F730 /* libbase64++.h */,
-			);
-			path = "libbase64++";
-			sourceTree = "<group>";
-		};
-		78C64EEB18677EC500B8F730 /* mempool++ */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EEC18677EC500B8F730 /* mempool.h */,
-			);
-			path = "mempool++";
-			sourceTree = "<group>";
-		};
-		78C64EF118677EC500B8F730 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EF318677EC500B8F730 /* internalJSONNode.cpp */,
-				78C64EF418677EC500B8F730 /* internalJSONNode.h */,
-				78C64EF518677EC500B8F730 /* JSON_Base64.h */,
-				78C64EF618677EC500B8F730 /* JSONAllocator.cpp */,
-				78C64EF718677EC500B8F730 /* JSONAllocator.h */,
-				78C64EF818677EC500B8F730 /* JSONChildren.cpp */,
-				78C64EF918677EC500B8F730 /* JSONChildren.h */,
-				78C64EFA18677EC500B8F730 /* JSONDebug.cpp */,
-				78C64EFB18677EC500B8F730 /* JSONDebug.h */,
-				78C64EFC18677EC500B8F730 /* JSONDefs */,
-				78C64F0118677EC500B8F730 /* JSONDefs.h */,
-				78C64F0218677EC500B8F730 /* JSONGlobals.h */,
-				78C64F0318677EC500B8F730 /* JSONIterators.cpp */,
-				78C64F0418677EC500B8F730 /* JSONMemory.cpp */,
-				78C64F0518677EC500B8F730 /* JSONMemory.h */,
-				78C64F0618677EC500B8F730 /* JSONMemoryPool.h */,
-				78C64F0718677EC500B8F730 /* JSONNode.cpp */,
-				78C64F0818677EC500B8F730 /* JSONNode.h */,
-				78C64F0918677EC500B8F730 /* JSONNode_Mutex.cpp */,
-				78C64F0A18677EC500B8F730 /* JSONPreparse.cpp */,
-				78C64F0B18677EC500B8F730 /* JSONPreparse.h */,
-				78C64F0C18677EC500B8F730 /* JSONSharedString.h */,
-				78C64F0D18677EC500B8F730 /* JSONSingleton.h */,
-				78C64F0E18677EC500B8F730 /* JSONStats.h */,
-				78C64F0F18677EC500B8F730 /* JSONStream.cpp */,
-				78C64F1018677EC500B8F730 /* JSONStream.h */,
-				78C64F1118677EC500B8F730 /* JSONValidator.cpp */,
-				78C64F1218677EC500B8F730 /* JSONValidator.h */,
-				78C64F1318677EC500B8F730 /* JSONWorker.cpp */,
-				78C64F1418677EC500B8F730 /* JSONWorker.h */,
-				78C64F1518677EC500B8F730 /* JSONWriter.cpp */,
-				78C64F1618677EC500B8F730 /* libjson.cpp */,
-				78C64F1718677EC500B8F730 /* NumberToString.h */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		78C64EFC18677EC500B8F730 /* JSONDefs */ = {
-			isa = PBXGroup;
-			children = (
-				78C64EFD18677EC500B8F730 /* GNU_C.h */,
-				78C64EFE18677EC500B8F730 /* Strings_Defs.h */,
-				78C64EFF18677EC500B8F730 /* Unknown_C.h */,
-				78C64F0018677EC500B8F730 /* Visual_C.h */,
-			);
-			path = JSONDefs;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -379,32 +104,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C64F1818677EC500B8F730 /* libbase64++.h in Headers */,
-				78C64F1918677EC500B8F730 /* mempool.h in Headers */,
-				78C64F1A18677EC500B8F730 /* JSONOptions.h in Headers */,
-				78C64F1B18677EC500B8F730 /* libjson.h in Headers */,
-				78C64F1D18677EC500B8F730 /* internalJSONNode.h in Headers */,
-				78C64F1E18677EC500B8F730 /* JSON_Base64.h in Headers */,
-				78C64F2018677EC500B8F730 /* JSONAllocator.h in Headers */,
-				78C64F2218677EC500B8F730 /* JSONChildren.h in Headers */,
-				78C64F2418677EC500B8F730 /* JSONDebug.h in Headers */,
-				78C64F2518677EC500B8F730 /* GNU_C.h in Headers */,
-				78C64F2618677EC500B8F730 /* Strings_Defs.h in Headers */,
-				78C64F2718677EC500B8F730 /* Unknown_C.h in Headers */,
-				78C64F2818677EC500B8F730 /* Visual_C.h in Headers */,
-				78C64F2918677EC500B8F730 /* JSONDefs.h in Headers */,
-				78C64F2A18677EC500B8F730 /* JSONGlobals.h in Headers */,
-				78C64F2D18677EC500B8F730 /* JSONMemory.h in Headers */,
-				78C64F2E18677EC500B8F730 /* JSONMemoryPool.h in Headers */,
-				78C64F3018677EC500B8F730 /* JSONNode.h in Headers */,
-				78C64F3318677EC500B8F730 /* JSONPreparse.h in Headers */,
-				78C64F3418677EC500B8F730 /* JSONSharedString.h in Headers */,
-				78C64F3518677EC500B8F730 /* JSONSingleton.h in Headers */,
-				78C64F3618677EC500B8F730 /* JSONStats.h in Headers */,
-				78C64F3818677EC500B8F730 /* JSONStream.h in Headers */,
-				78C64F3A18677EC500B8F730 /* JSONValidator.h in Headers */,
-				78C64F3C18677EC500B8F730 /* JSONWorker.h in Headers */,
-				78C64F3F18677EC500B8F730 /* NumberToString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,16 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78090AB8186735C8005D8D5F /* main.cpp in Sources */,
-				78090AD818673A4B005D8D5F /* Base64.cpp in Sources */,
-				78090AD918673A4B005D8D5F /* Connection.cpp in Sources */,
-				78090ADA18673A4B005D8D5F /* ConnectionManager.cpp in Sources */,
-				78090ADB18673A4B005D8D5F /* MessageQueue.cpp in Sources */,
-				78090ADE18673A4B005D8D5F /* Reactor.cpp in Sources */,
-				78090ADF18673A4B005D8D5F /* Socket.cpp in Sources */,
-				78090AE218673A8F005D8D5F /* Engine.cpp in Sources */,
 				78090AF518673AC2005D8D5F /* Database.cpp in Sources */,
 				78090AFD18673DD0005D8D5F /* sqlite3.c in Sources */,
+				78BC8CCC1868BEC70034636F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,20 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C64F1C18677EC500B8F730 /* internalJSONNode.cpp in Sources */,
-				78C64F1F18677EC500B8F730 /* JSONAllocator.cpp in Sources */,
-				78C64F2118677EC500B8F730 /* JSONChildren.cpp in Sources */,
-				78C64F2318677EC500B8F730 /* JSONDebug.cpp in Sources */,
-				78C64F2B18677EC500B8F730 /* JSONIterators.cpp in Sources */,
-				78C64F2C18677EC500B8F730 /* JSONMemory.cpp in Sources */,
-				78C64F2F18677EC500B8F730 /* JSONNode.cpp in Sources */,
-				78C64F3118677EC500B8F730 /* JSONNode_Mutex.cpp in Sources */,
-				78C64F3218677EC500B8F730 /* JSONPreparse.cpp in Sources */,
-				78C64F3718677EC500B8F730 /* JSONStream.cpp in Sources */,
-				78C64F3918677EC500B8F730 /* JSONValidator.cpp in Sources */,
-				78C64F3B18677EC500B8F730 /* JSONWorker.cpp in Sources */,
-				78C64F3D18677EC500B8F730 /* JSONWriter.cpp in Sources */,
-				78C64F3E18677EC500B8F730 /* libjson.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +254,8 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/NautiHubMapServer\"",
+					"\\\"$(SRCROOT)/NautiHubMapServer\\\"",
+					/Users/ihcfan/NautiPlot/libwebsockets/xcode/lib/Release,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -587,7 +266,8 @@
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/NautiHubMapServer\"",
+					"\\\"$(SRCROOT)/NautiHubMapServer\\\"",
+					/Users/ihcfan/NautiPlot/libwebsockets/xcode/lib/Release,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
