@@ -4,6 +4,7 @@
 #include "Detail/Engine_impl.h"
 #include "Network/Connection.h"
 #include "/usr/include/libjson/libjson.h"
+#include <unistd.h>
 
 namespace engine {
 	
@@ -95,14 +96,15 @@ namespace engine {
 
 		std::thread reactor_thread(std::bind(&Reactor::Run,
 						     std::ref(impl_->reactor_),
-						     1359,
+						     1374,
 						     on_accept,
 						     on_receive,
 						     on_abort));
 
+        // if std::move not called, thread will exit when app exits...not sure why.
 		impl_->reactor_thread_ = std::move(reactor_thread);
-
-		impl_->reactor_.Run(1359, on_accept, on_receive, on_abort);
+        
+        std::cout << "done Engine::Run()" << std::endl;
 
 		return true;
 	}

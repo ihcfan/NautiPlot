@@ -35,9 +35,12 @@ int main(int argc, char **argv)
 		return -1;	
 	}
 	else if (daemon_id > 0) {
-		std::cout << "Parent exit" << std::endl;
+		std::cout << "Parent exit id: " << daemon_id << std::endl;
+        while(1) { sleep(1); }
 		return -1;
 	}
+
+    std::cout<<"---here--- id: " << daemon_id << std::endl;
 
 	if (setsid() < 0) {
 		std::cerr << "setsid()" << std::endl;
@@ -52,11 +55,18 @@ int main(int argc, char **argv)
 		engine.Stop();
 		return -1;
 	}
+    
+    std::cout<<"Initialized engine" << std::endl;
+    
 	g_keep_running = true;
+    
 	while(g_keep_running) {
-		sleep(30);
-	}		
-
+		sleep(1);
+        std::cout<<".";
+	}
+    
+    
+    std::cout<<"Stopping engine" << std::endl;
 	engine.Stop();
 	
 	std::cout << "bye bye" << std::endl;

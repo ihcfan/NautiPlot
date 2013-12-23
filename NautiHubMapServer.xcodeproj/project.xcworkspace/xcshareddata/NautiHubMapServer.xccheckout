@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34988BB2-A023-4F2D-BD96-F4F7923EFBD6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NautiHubMapServer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EC534733-29FD-4CC2-A925-AEA237D58E1A</key>
+		<string>https://github.com/ihcfan/NautiPlot</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NautiHubMapServer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EC534733-29FD-4CC2-A925-AEA237D58E1A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ihcfan/NautiPlot</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EC534733-29FD-4CC2-A925-AEA237D58E1A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC534733-29FD-4CC2-A925-AEA237D58E1A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NautiPlot</string>
+		</dict>
+	</array>
+</dict>
+</plist>

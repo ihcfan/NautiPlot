@@ -53,11 +53,13 @@ namespace network {
 	{
 		timeval timeout;
 		int sockets_ready = 0;
+        
+        std::cout<<"Entering Run Loop" << std::endl;
 
 		fd_set use_set;
 		impl_->is_running_ = true;
 		while (impl_->is_running_) {
-			std::this_thread::sleep_for(std::chrono::milliseconds(50));
+//			std::this_thread::sleep_for(std::chrono::milliseconds(50));
 
 			use_set = impl_->fds_listen_;
 			auto busy_it = impl_->busy_fds_.begin();
@@ -66,8 +68,10 @@ namespace network {
 				FD_CLR(*busy_it, &use_set);
 			}
 			impl_->busy_fds_lock_.unlock();
-			timeout.tv_sec = 0;
-			timeout.tv_usec = 5;
+            
+            memset(&timeout,0,sizeof(timeout));
+			timeout.tv_sec = 1;
+			timeout.tv_usec = 0;
 			sockets_ready = select(impl_->high_sock_ + 1, &use_set, nullptr, nullptr, &timeout);
 			if (sockets_ready == -1) {
 				perror("Reactor::Runloop() - select");
